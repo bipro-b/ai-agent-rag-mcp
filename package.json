@@ -1,0 +1,15 @@
+{
+  "name": "ai-agent-rag-mcp",
+  "private": true,
+  "workspaces": ["apps/*", "packages/*", "servers/*"],
+"scripts": {
+  "dev": "npm run dev:agent",
+  "build": "npm -ws run build",
+  "index:docs": "npm -w packages/rag-core run index",
+  "dev:agent": "npm -w apps/agent-cli run dev"
+},
+  "devDependencies": {
+    "@types/node": "^22.0.0",
+    "typescript": "^5.6.3"
+  }
+}

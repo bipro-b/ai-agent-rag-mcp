@@ -1,0 +1,13 @@
+{
+  "name": "@app/rag-core",
+  "type": "module",
+  "version": "1.0.0",
+  "scripts": {
+    "build": "tsc -p tsconfig.json",
+    "index": "node --env-file=../../.env dist/indexer.js"
+  },
+  "dependencies": {
+    "dotenv": "^16.4.5",
+    "openai": "^4.0.0"
+  }
+}
